@@ -32,7 +32,7 @@ jobs:
           fi
 workflows:
   version: 2
-  one_and_two:
+  one_and_two_:
     jobs:
       - one
       - two:
