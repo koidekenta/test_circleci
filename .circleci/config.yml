@@ -1,8 +1,13 @@
 version: 2
 
 jobs:
-  build:
+  one:
     docker:
       - image: circleci/php:7.1-node-browsers
     steps:
       - checkout
+workflows:
+  version: 2
+  phptest:
+    jobs:
+      - one
